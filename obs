@@ -8,7 +8,7 @@
         var nome = 'Rafael';
         var numero = 10;
         var float = 10,4;
-        var humano = verdadeiro;
+        var humano = true;
         var vetor = ['vetor 1', 'vetor 2', 'vetor 3'];
         var pessoa = {
             nome: 'Marcos',
@@ -39,3 +39,49 @@
     </body>
 
 </html>
+
+<html> 
+    <head>
+    <title> Curso 1 </title>
+
+    </head>
+    <body>
+        <script> 
+        function soma(n1, n2) {
+            var x = n1 + n2;
+            return x;
+
+        }
+
+        var y = soma (0.1,2);
+        console.log(y)
+    </script>
+    </body>
+
+</html>
+
+<html> 
+    <head>
+    <title> Curso 1 </title>
+
+    </head>
+    <body>
+        <script> 
+        function rtnsx(sexo) {
+
+
+            if (sexo==="M"){
+                return 'Homem';}
+            else if(sexo==="F") {
+                return 'Mulher';
+            }else{
+                return 'indefinido';                
+            }
+        }
+        var x = rtnsx('M');
+        console.log(x);
+    </script>
+    </body>
+
+</html>
+
