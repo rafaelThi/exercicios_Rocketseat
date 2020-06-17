@@ -85,3 +85,88 @@
 
 </html>
 
+<html> 
+    <head>
+    <title> Curso 1 </title>
+
+    </head>
+    <body>
+        <script> 
+        function rtnsx(sexo) {
+            switch (sexo){
+                case 'M': 
+                return 'Masculino';
+                case 'm': 
+                return 'Masculino';
+                case 'F': 
+                return 'Feminino';
+                case 'f': 
+                return 'Feminino';
+                default: 
+                return 'Indefinido';
+
+            }
+        }
+        var x = rtnsx('g');
+        console.log(x);
+    </script>
+    </body>
+
+</html>
+
+<html> 
+    <head>
+    <title> Curso 1 </title>
+
+    </head>
+    <body>
+        <script> 
+        var sx = 'M', id = 15;
+        if (sx ==='M' || id >= 18){
+            console.log('Homem, maior de Idade')
+        }else {}
+        
+    
+    </script>
+    </body>
+
+</html>
+    <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <script> 
+            var sx = 'M';
+            if (sx !=='d'){
+                console.log('OK')
+            }else {}
+            
+        
+        </script>
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <script> 
+            var sx = 'F';
+            var masculino;
+            if (sx === 'M'){
+                masculino = true;
+            }else {
+                masculino = false;
+            }
+            console.log(masculino);        
+        </script>
+        </body>
+
+    </html>
+    
+    
