@@ -274,3 +274,101 @@
         </body>
 
     </html>
+
+    <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input type="text" name ="nome"/>
+                <button class = "Botao">Botão 1</button>
+            </div>
+      <script> 
+            var inputElement = document.getElementById('nome');
+        console.log(inputElement);
+        </script>
+    
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input type="text" name ="nome"/>
+                <button class = "Botao">Botão 1</button>
+            </div>
+      <script> 
+            var inputElement = document.getElementsByTagName ('input')[0];
+        console.log(inputElement);
+        </script>
+    
+        </body>
+
+    </html> 
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input type="text" name ="nome"/>
+                <button class = "Botao">Botão 1</button>
+            </div>
+      <script> 
+            var inputElement = document.getElementsByClassName ('nome')[0];
+        console.log(inputElement);
+        </script>
+    
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input type="text" name ="nome"/>
+                <button class = "Botao">Botão 1</button>
+            </div>
+      <script> 
+            var inputElement = document.querySelector ('div#app input');
+        console.log(inputElement);
+        </script>
+    
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input type="text" name ="nome"/>
+                <button class = "Botao">Botão 1</button>
+            </div>
+            <script> 
+                var btnElement = document.querySelector ('button.Botao');
+           
+                 btnElement.onclick = function(){
+                 alert('Botão clicado');
+            }
+        
+             </script>
+    
+        </body>
+
+    </html>
