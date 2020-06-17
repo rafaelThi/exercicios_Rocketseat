@@ -201,3 +201,58 @@
     </html>
     
     
+    <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <script> 
+            //for (var i = 0; i<= 50; i++){
+          //console.log(i); 
+            //}      
+            var x=12343566222;
+            while(x>50){
+            console.log(x); 
+            x/=2;
+            }
+        </script>
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <script> 
+            function exalgo(){
+                console.log('ola mundo\n');
+            }
+            setTimeout(exalgo, 2000);
+            setTimeout(exalgo, 1500);
+            setTimeout(exalgo, 1000);
+            setTimeout(exalgo, 500);
+        </script>
+        </body>
+
+    </html>
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <button onclick="alerta()">Botão 1</button>
+            </div>
+      <script> 
+            function alerta(){
+                alert('Botão foi acionado');
+            }
+        </script>
+        </body>
+
+    </html>
