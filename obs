@@ -256,3 +256,21 @@
         </body>
 
     </html>
+
+    <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input onkeypress="alerta()"/>Botão 1</button>
+            </div>
+      <script> 
+            function alerta(){
+                alert('Botão foi acionado');
+            }
+        </script>
+        </body>
+
+    </html>
