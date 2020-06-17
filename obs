@@ -372,3 +372,80 @@
         </body>
 
     </html>
+
+    <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+                <input type="text" name ="nome"/>
+                <button class = "Botao">Botão 1</button>
+            </div>
+            <script> 
+                var inputElement = document.querySelector('input[name=nome]');
+                var btnElement = document.querySelector ('button.Botao');
+           
+                 btnElement.onclick = function(){
+                     var text = inputElement.value;
+
+                 alert(text);
+            }
+        
+             </script>
+    
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <div id='app'>
+
+            </div>
+            <script> 
+              var linkElement = document.createElement('x');
+              linkElement.setAttribute('href', 'http://edesoft.com.br');
+            
+            var textElement = document.createTextNode('Acessar Site');
+            linkElement.appendChild(textElement)
+            
+            var ctnElement =document.querySelector('#app');
+            ctnElement.appendChild(linkElement);
+             </script>
+    
+        </body>
+
+    </html>
+    
+    </html>
+    
+<html> 
+<head>
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div id='app'>
+
+    </div>
+    <script> 
+      var linkElement = document.createElement('a');
+      linkElement.setAttribute('href', 'http://edesoft.com.br');
+      linkElement.setAttribute('title', 'Site da Edesoft');
+    
+    var textElement = document.createTextNode('Acessar');
+    linkElement.appendChild(textElement);
+    
+    var ctnElement =document.querySelector('#app');
+    ctnElement.appendChild(linkElement);
+     </script>
+
+</body>
+
+</html>
