@@ -169,4 +169,35 @@
 
     </html>
     
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <script> 
+
+            var sx = 'M';
+            var masculino = (sx === 'M');
+            
+            console.log(masculino);        
+        </script>
+        </body>
+
+    </html>
+    
+        <html> 
+        <head>
+        <title> Curso 1 </title>
+
+        </head>
+        <body>
+            <script> 
+            var sexo = 'M';
+          console.log((sexo === 'M') ? 'Masculino' : 'Feminino');       
+        </script>
+        </body>
+
+    </html>
+    
     
