@@ -172,3 +172,57 @@ EX1
 </body>
 
 </html>
+
+EX2
+
+</html>
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div id="app">
+        <div class="box"></div>
+        <button class="botao">Botão 1</button>
+    </div>
+    <script>
+     var btnElement = document.querySelector('button.botao');
+     var cxElement =document.querySelector('div.box')
+     var x;
+        x=0;
+     btnElement.onclick = function (){
+    
+        var boxElement =document.querySelector('.box');
+        boxElement.style.width = 100;
+        boxElement.style.height = 100;
+        boxElement.style.backgroundColor = '#f00';
+        x=x+1;
+        console.log(x);
+    }
+    cxElement.onmouseover = function(){
+        var boxElement =document.querySelector('.box');
+        boxElement.style.backgroundColor = newColor;
+    }
+    
+    function getRandomColor() {
+ var letters = "0123456789ABCDEF";
+ var color = "#";
+ for (var i = 0; i < 6; i++) {
+ color += letters[Math.floor(Math.random() * 16)];
+ }
+ return color;
+}
+var newColor = getRandomColor();
+
+
+</script>
+
+</body>
+
+</html>
+
+
+EX3
