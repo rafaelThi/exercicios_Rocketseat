@@ -267,3 +267,57 @@ mostrar();
 
 EX 4
 
+
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div id="app">
+        <ul></ul>
+        <input type='text' placeholder="Digite um Nome...">
+        <button>Adicionar</button>
+    </div>
+    <script>
+     
+    var listElement = document.querySelector('#app ul');
+    var inputElement = document.querySelector('#app input');
+    var btnElement= document.querySelector('#app button');
+    var nomes = [
+    "Diego",
+    "Gabriel",
+    "Lucas"
+];
+
+    function mostrarnomes(){
+        listElement.innerHTML = '';
+        for(nome of nomes){
+            var element = document.createElement('li');
+            var nomestext = document.createTextNode(nome);
+            
+            element.appendChild(nomestext);
+            listElement.appendChild(element);
+            console.log(nomes)
+    }
+    }
+
+    mostrarnomes();
+
+function addnome(){
+    var nomestext = inputElement.value;
+    nomes.push(nomestext);
+    inputElement.value = '';
+    mostrarnomes();
+
+}
+btnElement.onclick = addnome;
+
+
+</script>
+
+</body>
+
+</html>
