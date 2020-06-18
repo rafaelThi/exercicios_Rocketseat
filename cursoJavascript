@@ -5,7 +5,7 @@ Ex 1:
 
 </html> 
 <html> 
-<head>
+<head>  
     <meta charset="UTF-8">
 <title> Curso 1 </title>
 </head>
@@ -68,7 +68,37 @@ pares(10, 20)
 
 ex 3
 
-Tive problemas para solução 
+</html>
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div>
+    </div>
+
+    <script>
+    var skills = ["Javascript", "ReactJS", "React Native"];
+function habilidade(Skills){
+        if (skills[0]=== 'Javascript') {
+            console.log(true);
+        } else if (skills[1]!== 'Javascript') {
+            console.log(false);
+        }else if (skills[2]!== 'Javascript') {
+            console.log(false);
+        }}
+
+    habilidade()
+</script>
+
+</body>
+
+</html>
+
+
 
 ex 4
 </html>
@@ -98,6 +128,45 @@ function anosxp(x){
     }
 }
 anosxp(10)
+</script>
+
+</body>
+
+</html>
+
+ex 5
+
+Modulo 2 
+EX1
+
+</html>
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div id="app">
+        <div class="box"></div>
+        <button class="botao">Botão 1</button>
+    </div>
+    <script>
+     var btnElement = document.querySelector('button.botao');
+     var x;
+        x=0;
+     btnElement.onclick = function (){
+    
+        var boxElement =document.querySelector('.box');
+        boxElement.style.width = 100;
+        boxElement.style.height = 100;
+        boxElement.style.backgroundColor = '#f00';
+        x=x+1;
+        console.log(x);
+    }
+
+
 </script>
 
 </body>
