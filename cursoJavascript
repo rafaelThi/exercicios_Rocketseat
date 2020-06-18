@@ -226,3 +226,44 @@ var newColor = getRandomColor();
 
 
 EX3
+
+</html>
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div id="app">
+        <ul></ul>
+    </div>
+    <script>
+     var nomes = ["Diego", "Gabriel", "Lucas"];
+    var listElement = document.querySelector('#app ul')
+
+
+    function mostrar(){
+        for(nomes of nomes){
+            var element = document.createElement('li');
+            var nomestext = document.createTextNode(nomes);
+
+            element.appendChild(nomestext);
+            listElement.appendChild(element);
+            console.log(nomes)
+    }
+    }
+
+
+mostrar();
+
+</script>
+
+</body>
+
+</html>
+
+
+EX 4
+
