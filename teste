@@ -1,4 +1,3 @@
-    
 <html> 
     <head>
         <meta charset="UTF-8">
@@ -14,42 +13,28 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     
         <script>
+var listElement = document.querySelector('#app ul');
+var inputElement = document.querySelector('#app input');
+var btnElement= document.querySelector('#app button');
 
-axios.get('https://api.github.com/users/diego3g/repos')
+
+function exibefullname(){
+axios.get('https://api.github.com/users/'+inputElement.value+'/repos')
     .then(function(response){
-    var fullnames = document.createElement('li');
-    fullnames =response.data;
-    console.log(fullnames);
-    mostrarfullname()
+      for (repo of response.data){
+      var element = document.createElement('li');
+      var repotext = document.createTextNode(repo.full_name);
+      element.appendChild(repotext);
+      listElement.appendChild(element);
+
+    console.log(repo);
+    console.log(response.data);
+
+      }
   })
-
-   .catch(function(error){console.log(error);});
-
-
-   var listElement = document.querySelector('#app ul');
-   var inputElement = document.querySelector('#app input');
-   var btnElement= document.querySelector('#app button');
-   var repos = [];
-
-   function mostrarfullname(){
-       for(repo of repos){
-           var element = document.createElement('li');
-           element=fullnames;
-           var repotext = document.createTextNode(repo);
-           element.appendChild(repotext);
-           listElement.appendChild(element);
-           console.log(repos)
-   }}
-   mostrarfullname();
-
-function addnome(){
-   var repotext = inputElement.value;
-   repos.push(repotext);
-   inputElement.value = '';
-   mostrarfullname();
-
-}btnElement.onclick = addnome;
-
+   .catch(function(error){console.warn(error);});
+}
+btnElement.onclick =exibefullname;
 
 
         </script>
