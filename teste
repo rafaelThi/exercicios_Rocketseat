@@ -13,15 +13,7 @@
         </div>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     
-        <script src="ES6.js"></script>
-    
-    </body
-    </html>
-
-
-
-
-
+        <script>
 
 axios.get('https://api.github.com/users/diego3g/repos')
     .then(function(response){
@@ -58,3 +50,9 @@ function addnome(){
 
 }btnElement.onclick = addnome;
 
+
+
+        </script>
+    
+    </body
+    </html>
