@@ -134,7 +134,6 @@ anosxp(10)
 
 </html>
 
-ex 5
 
 Modulo 2 
 EX1
@@ -321,3 +320,28 @@ btnElement.onclick = addnome;
 </body>
 
 </html>
+
+Modulo 4
+
+EX4
+
+var checarIdade = function(idade){
+
+return new Promise(function(resolve, reject){ 
+    if (idade>= 18){
+        resolve('Maior de idade');
+    }else{
+        reject('Menor de idade');
+    }
+
+});
+}
+
+checarIdade(20)
+ .then(function() {
+ console.log("Maior que 18");
+ })
+ .catch(function() {
+ console.log("Menor que 18");
+ });
+
