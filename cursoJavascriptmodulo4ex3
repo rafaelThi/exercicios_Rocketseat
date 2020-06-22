@@ -1,0 +1,53 @@
+**Duvidana parte do caregamento**
+
+<html> 
+    <head>
+        <meta charset="UTF-8">
+    <title> Curso 2 </title>
+    
+    </head>
+    <body>
+        <div id="app">
+            <ul></ul>
+            <input type="text" name="user">
+            <button onclick="">Adicionar</button>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+        <script>
+        var listElement = document.querySelector('#app ul');
+var inputElement = document.querySelector('#app input');
+var btnElement= document.querySelector('#app button');
+
+
+function exibefullname(){
+axios.get('https://api.github.com/users/'+inputElement.value+'/repos')
+    .then(function(response){
+      achar(response)
+  })
+   .catch(function(error){
+     
+    console.warn(error);
+    msgerro();
+  });
+}
+function achar(response){
+  for (repo of response.data){
+    var element = document.createElement('li');
+    var repotext = document.createTextNode(repo.full_name);
+    element.appendChild(repotext);
+    listElement.appendChild(element);
+
+  console.log(repo);
+  console.log(response.data);
+
+    }
+}
+function msgerro(){
+  alert('Erro 404');
+}
+btnElement.onclick =exibefullname;
+        </script>
+    
+    </body
+    </html>
