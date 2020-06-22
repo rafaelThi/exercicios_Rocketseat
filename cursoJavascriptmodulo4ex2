@@ -1,4 +1,19 @@
-var listElement = document.querySelector('#app ul');
+<html> 
+    <head>
+        <meta charset="UTF-8">
+    <title> Curso 2 </title>
+    
+    </head>
+    <body>
+        <div id="app">
+            <ul></ul>
+            <input type="text" name="user">
+            <button onclick="">Adicionar</button>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+        <script>
+        var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var btnElement= document.querySelector('#app button');
 
@@ -20,3 +35,9 @@ axios.get('https://api.github.com/users/'+inputElement.value+'/repos')
    .catch(function(error){console.warn(error);});
 }
 btnElement.onclick =exibefullname;
+
+        </script>
+    
+    </body
+    </html>
+
