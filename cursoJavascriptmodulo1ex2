@@ -1,0 +1,30 @@
+</html>
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div>
+    </div>
+
+    <script>
+        var x,y;
+function pares(x, y){
+    while (x<=y){
+    if ((x%2)== 0){
+        console.log(x);
+    }
+    x ++
+}
+}
+pares(10, 20)
+
+
+</script>
+
+</body>
+
+</html>
