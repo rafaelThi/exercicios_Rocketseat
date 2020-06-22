@@ -1,0 +1,32 @@
+</html> 
+<html> 
+<head>  
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+</head>
+<body>
+    <div id='app'>
+    </div>
+    <script>
+var endereco = {
+    rua: "Rua dos pinheiros",
+    numero: 1293,
+    bairro: "Centro",
+    cidade: "São Paulo",
+    uf: "SP"
+};   
+console.log('o usuario mora em ');
+console.log(endereco.cidade);
+console.log('/');
+console.log(endereco.uf);
+console.log(', no bairro');
+console.log(endereco.bairro);
+console.log(', na rua "');
+console.log(endereco.rua);
+console.log('" com n° ');
+console.log(endereco.numero);
+console.log('.');
+</script>
+    
+    </body
+    </html>
