@@ -1,0 +1,22 @@
+var listElement = document.querySelector('#app ul');
+var inputElement = document.querySelector('#app input');
+var btnElement= document.querySelector('#app button');
+
+
+function exibefullname(){
+axios.get('https://api.github.com/users/'+inputElement.value+'/repos')
+    .then(function(response){
+      for (repo of response.data){
+      var element = document.createElement('li');
+      var repotext = document.createTextNode(repo.full_name);
+      element.appendChild(repotext);
+      listElement.appendChild(element);
+
+    console.log(repo);
+    console.log(response.data);
+
+      }
+  })
+   .catch(function(error){console.warn(error);});
+}
+btnElement.onclick =exibefullname;
