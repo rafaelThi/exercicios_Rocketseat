@@ -1,5 +1,14 @@
-
-var checarIdade = function(idade){
+<html> 
+    <head>
+        <meta charset="UTF-8">
+    <title> Curso 2 </title>
+    
+    </head>
+    <body>
+        <div id="app">
+        </div>    
+        <script>
+        var checarIdade = function(idade){
 
 return new Promise(function(resolve, reject){ 
     if (idade>= 18){
@@ -18,4 +27,9 @@ checarIdade(20)
  .catch(function() {
  console.log("Menor que 18");
  });
+        </script>
+    
+    </body
+    </html>
+
 
