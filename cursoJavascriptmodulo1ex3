@@ -1,0 +1,30 @@
+</html>
+    
+<html> 
+<head>
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+
+</head>
+<body>
+    <div>
+    </div>
+
+    <script>
+    var skills = ["Javascript", "ReactJS", "React Native"];
+function habilidade(Skills){
+        if (skills[0]=== 'Javascript') {
+            console.log(true);
+        } else if (skills[1]!== 'Javascript') {
+            console.log(false);
+        }else if (skills[2]!== 'Javascript') {
+            console.log(false);
+        }}
+
+    habilidade()
+</script>
+
+</body>
+
+</html>
+
