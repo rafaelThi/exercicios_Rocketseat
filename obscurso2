@@ -45,3 +45,9 @@ minhalista.mostrausuario();
 
 
 var inputElement = document.querySelector('#app input');
+var btmElement = document.querySelector('#app button');
+class mat{
+    static soma(a,b){
+    return a+b;
+}}
+console.log(mat.soma(5,3));
