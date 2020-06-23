@@ -104,3 +104,14 @@ function soma(a=3,b=6){
 console.log(soma(1));
 console.log(soma());
 
+
+const usuario = {nome: 'Rafael',idade: 23,ender:{cid:'São Paulo',ender2:{rua: {nom:'betari',},n: '123',},},};
+function mostranome(usuario){
+    console.log(usuario.nome,
+        usuario.idade,
+        usuario.ender.cid,
+        usuario.ender.ender2.rua.nom,
+        usuario.ender.ender2.n,);
+}
+mostranome(usuario);
+
