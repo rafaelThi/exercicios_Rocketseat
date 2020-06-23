@@ -74,6 +74,10 @@ return item % 2 !== 0;
 });
 console.log(filtro);
 
+
+const teste = ()=> {return{nome:'Rafael'}}
+console.log(teste());
+
 const filtro2 = arr.filter(function(item){
     return item % 2 === 0;
     });
