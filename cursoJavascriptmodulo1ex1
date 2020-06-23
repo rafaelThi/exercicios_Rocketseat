@@ -15,18 +15,9 @@ var endereco = {
     cidade: "São Paulo",
     uf: "SP"
 };   
-console.log('o usuario mora em ');
-console.log(endereco.cidade);
-console.log('/');
-console.log(endereco.uf);
-console.log(', no bairro');
-console.log(endereco.bairro);
-console.log(', na rua "');
-console.log(endereco.rua);
-console.log('" com n° ');
-console.log(endereco.numero);
-console.log('.');
+console.log('o usuario mora em ',endereco.cidade,'/',endereco.uf,', no bairro',endereco.bairro,', na rua "', endereco.rua, '" com n° ', endereco.numero, '.');
+
+
 </script>
-    
     </body
     </html>
