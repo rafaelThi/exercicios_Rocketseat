@@ -42,3 +42,6 @@ document.getElementById('novotodo').onclick = function() {
     minhalista.add(inputElement.value);
 }
 minhalista.mostrausuario();
+
+
+var inputElement = document.querySelector('#app input');
