@@ -51,3 +51,40 @@ class mat{
     return a+b;
 }}
 console.log(mat.soma(5,3));
+
+
+
+const arr=[1,2,3,4,5,6,7];
+
+const newarr=arr.map(function(item,index){
+    return item+index;
+    
+});
+console.log(newarr);
+
+const sum = arr.reduce(function(total, next) {
+    return total + next;
+
+});
+
+console.log(sum);
+
+const filtro = arr.filter(function(item){
+return item % 2 !== 0;
+});
+console.log(filtro);
+
+const filtro2 = arr.filter(function(item){
+    return item % 2 === 0;
+    });
+    console.log(filtro2);
+
+const achar= arr.find(function(item) {
+return item === 10;
+});
+
+console.log(achar);
+
+
+
+
