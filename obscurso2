@@ -132,3 +132,29 @@ const [a,b, ...c] = arr;
 console.log(a);
 console.log(b);
 console.log(c);
+
+
+function soma (a, b, ...parans){
+    return parans;
+}
+console.log(soma(8,2,3,4,5,6,7,8));
+
+//spred
+
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+
+const arr3 = [...arr1,...arr2];
+
+console.log(arr3);
+
+const user1 ={
+    nome: 'rafael',
+    idade: 23,
+    cidade: 'SP',
+}
+
+const user2 ={...user1, nome:'Rafa'};
+
+console.log(user2);
+console.log(user1);
