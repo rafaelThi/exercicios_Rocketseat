@@ -158,3 +158,9 @@ const user2 ={...user1, nome:'Rafa'};
 
 console.log(user2);
 console.log(user1);
+
+
+const nome = 'Rafael';
+const idade = 23;
+
+console.log(`Meu nome é ${nome} e tenho ${idade} anos!`)
