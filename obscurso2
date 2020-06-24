@@ -115,3 +115,20 @@ function mostranome(usuario){
 }
 mostranome(usuario);
 
+
+const usuario = {nome: 'Rafael',idade: 23,ender:{cid:'São Paulo',ender2:{rua: {nom:'betari',},n: '123',},},};
+function mostranome(usuario){
+    console.log(usuario.nome,
+        usuario.idade,
+        usuario.ender.cid,
+        usuario.ender.ender2.rua.nom,
+        usuario.ender.ender2.n,);
+}
+mostranome(usuario);
+ 
+const arr = [1,2,3,4];
+const [a,b, ...c] = arr;
+
+console.log(a);
+console.log(b);
+console.log(c);
