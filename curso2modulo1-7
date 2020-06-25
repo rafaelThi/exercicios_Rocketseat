@@ -1,0 +1,23 @@
+
+</html> 
+<html> 
+<head>  
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+</head>
+<body>
+    <div id='app'>
+    </div>
+    <script>
+const nome = 'Diego';
+const idade = 23;
+const usuario = {
+ nome,
+ idade,
+ cidade: 'Rio do Sul',
+};
+console.log(usuario)
+
+</script>
+    </body
+    </html>
