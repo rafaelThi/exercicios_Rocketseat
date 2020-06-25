@@ -1,3 +1,14 @@
+
+</html> 
+<html> 
+<head>  
+    <meta charset="UTF-8">
+<title> Curso 1 </title>
+</head>
+<body>
+    <div id='app'>
+    </div>
+    <script>
 const usuarios = [
     { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
     { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
@@ -9,3 +20,7 @@ const usuarios = [
            return x
 });
 console.log(dobraidade);
+</script>
+    </body
+    </html>
+
