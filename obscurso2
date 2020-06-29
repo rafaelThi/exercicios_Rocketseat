@@ -185,3 +185,10 @@ async function executaPromisse(){
 executaPromisse();
 
 
+const executaPromisse = async () => {
+    console.log(await minhaPromisse());
+    console.log(await minhaPromisse());
+    console.log(await minhaPromisse());
+};
+
+executaPromisse();
