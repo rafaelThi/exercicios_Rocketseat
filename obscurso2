@@ -164,3 +164,24 @@ const nome = 'Rafael';
 const idade = 23;
 
 console.log(`Meu nome é ${nome} e tenho ${idade} anos!`)
+
+
+
+
+
+
+
+
+
+
+const minhaPromisse = ()=> new Promise((resolve, reject)=>{
+    setTimeout(()=> {resolve('ok')}, 2000);
+});
+async function executaPromisse(){
+    console.log(await minhaPromisse());
+    console.log(await minhaPromisse());
+    console.log(await minhaPromisse());
+}
+executaPromisse();
+
+
