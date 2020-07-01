@@ -285,4 +285,64 @@ async function buscaUsuario (user) {
     };
 }
    buscaUsuario('diego3g'); */
+   
+   
+   
+   
+   
+   
+   class App{
+constructor() {
+    this.repositorio = [];
+
+    this.formEl = document.getElementById('repo-form');
+    this.listEl =document.getElementById('repo-list');
+    this.registra();
+}
+
+registra() {
+    this.formEl.onsubmit = event =>this.addrepo(event);
+}
+addrepo(event) {
+event.preventDefault();
+
+this.repositorio.push({
+    name:'rocketseat.com.br',
+    description:'Tire sua ideia do papel.',
+    avatar_url:'https://avatars2.githubusercontent.com/u/2254731?v=4',
+    html_url:'https://api.github.com/users/diego3g/repos',
+});
+    this.render();
+
+}
+
+render(){
+    this.listEl.innerHTML = '';
+
+    this.repositorio.forEach(repo =>{
+        let imgEl = document.createElement('img');
+        imgEl.setAttribute('src', repo.avatar_url);
+
+        let titleEl = document.createElement('strong');
+        titleEl.appendChild(document.createTextNode(repo.name));
+
+        let descriptionEl = document.createElement('p');
+        descriptionEl.appendChild(document.createTextNode(repo.description));
+
+        let linkEl = document.createElement('a');
+        linkEl.setAttribute('target', '_blank');
+        linkEl.appendChild(document.createTextNode('Acessar'));
+
+        let listitemEl= document.createElement('li');
+        listitemEl.appendChild(imgEl);
+        listitemEl.appendChild(titleEl);
+        listitemEl.appendChild(descriptionEl);
+        listitemEl.appendChild(linkEl);
+        
+        this.listEl.appendChild(listitemEl);
+});
+
+    }
+}
+const Meuapp = new App();
 
