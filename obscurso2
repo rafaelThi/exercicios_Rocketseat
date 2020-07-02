@@ -346,3 +346,104 @@ render(){
 }
 const Meuapp = new App();
 
+
+
+
+
+
+
+
+import api from './api';
+class App{
+constructor() {
+    this.repositorio = [];
+
+    this.formEl = document.getElementById('repo-form');
+    this.inputEl = document.querySelector('input[name=repository]')
+    this.listEl = document.getElementById('repo-list');
+    this.registra();
+}
+
+registra() {
+    this.formEl.onsubmit = event =>this.addrepo(event);
+}
+
+loand(loanding){
+    if (loanding === true){
+        let loandEl = document.createElement('span');
+        loandEl.appendChild(document.createTextNode('Carregado'));
+        loandEl.setAttribute('id','loanding');
+
+        this.formEl.appendChild(loandEl);
+    }else{
+        document.getElementById('loanding').remove();
+    }
+}
+
+
+async addrepo(event) {
+    event.preventDefault();
+
+    const repoInput = this.inputEl.value;
+
+   if (repoInput.length === 0){
+   alert('Escreva Algo');
+    return;
+}
+    this.loand(true);
+try{
+    const response = await api.get(`${repoInput}`);
+
+const { data : {login, bio, avatar_url, updated_at, html_url}} = response
+console.log(response);
+this.repositorio.push({
+    login,
+    bio,
+    avatar_url,
+    updated_at,
+    html_url,
+    
+});
+this.inputEl.value='';
+
+    this.render();
+}catch(err) {
+    alert('Repositorio Não Existe - erro 404');
+    this.inputEl.value='';
+}
+this.loand(false);
+}
+
+render(){
+    this.listEl.innerHTML = '';
+
+    this.repositorio.forEach(repo =>{
+        let imgEl = document.createElement('img');
+        imgEl.setAttribute('src', repo.avatar_url);
+
+        let titleEl = document.createElement('strong');
+        titleEl.appendChild(document.createTextNode(repo.login));
+
+        let descriptionEl = document.createElement('p');
+        descriptionEl.appendChild(document.createTextNode(repo.bio));
+
+        let updated_atEl =document.createElement('p');
+        updated_atEl.appendChild(document.createTextNode(repo.updated_at));
+
+        let linkEl = document.createElement('a');
+        linkEl.setAttribute('target', '_blank');
+        linkEl.setAttribute('href', repo.html_url);
+        linkEl.appendChild(document.createTextNode('Acessar'));
+
+        let listitemEl= document.createElement('li');
+        listitemEl.appendChild(imgEl);
+        listitemEl.appendChild(titleEl);
+        listitemEl.appendChild(descriptionEl);
+        listitemEl.appendChild(linkEl);
+        listitemEl.appendChild(updated_atEl);
+        
+        this.listEl.appendChild(listitemEl);
+});
+    }
+}
+new App();
